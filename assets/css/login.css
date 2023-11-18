@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: hsl(60, 44%, 93%);
+    --secondary-color: #000000;
+    --tertiary-color: #0077b6;
+    --gray-color: #b0b0b0;
+    --try: #ee6023;
+
+    
+      /* Font Family */
+  --fontFamily-inter: 'Inter', sans-serif;
+  --fontFamily-clashDisplay: 'ClashDisplay', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--fontFamily-inter);
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-color: var(--primary-color);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 35px;
+    width: 475px;
+    max-width: 95%;
+    box-shadow: 5px 5px 10px 1px rgb(0, 0, 0, 10%);
+}
+
+@media (max-width: 480px) {
+    .box {
+        padding: 75px 25px;
+    }
+}
+.box-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-img img {
+    max-width: 50%;
+    max-height: 50%;
+    margin-bottom: 20px;
+}
+
+.box h1 {
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.box form label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.box form div {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.box form div:hover {
+    border-bottom-color: var(--secondary-color);
+}
+
+.box form div {
+    margin-bottom: 15px;
+}
+
+.box form div ion-icon {
+    font-size: 15px;
+    padding-left: 0px;
+    color: var(--gray-color);
+}
+
+.box form div:hover ion-icon {
+    color: var(--secondary-color);
+}
+
+.box form div input {
+    font-size: 12px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    min-width: 0;
+    flex: 1;
+}
+
+.box form div input::placeholder {
+    opacity: 1;
+    color: var(--gray-color);
+    font-size: 12px;
+}
+
+.box a {
+    color: var(--gray-color);
+    text-decoration: none;
+    font-size: 12px;
+    display: block;
+}
+
+.box a:hover {
+    color: var(--secondary-color);
+}
+
+.box form .forgot {
+    margin-top: 15px;
+    text-align: center;
+    padding: 8px;
+    transition: .2s;
+}
+
+.box form .forgot:hover {
+    text-decoration: underline;
+    transition: .2s;
+}
+
+.box form input[type="submit"] {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    margin-top: 45px;
+    border-radius: 250px;
+}
+
+.box form input[type="submit"]:hover {
+    background-color: #ffffff;
+    border: 1px solid black;
+    transition: .3s;
+    color: #000000;
+    cursor: pointer;
+}
+
+.box .sign-up {
+    margin-top: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.box .clear-btn {
+    margin-top: 10px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    box-shadow: none;
+    border: none;
+    float: right;
+    background-color: white;
+    cursor: pointer;
+}
